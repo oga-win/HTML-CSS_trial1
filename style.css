@@ -1,0 +1,1120 @@
+/* 
+---共通---------------
+*/
+
+/*mainの各セクションのタイトル*/
+h2.section-main-title{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*mainの各セクションのサブタイトル*/
+.section-sub-title{
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-header.content-tidy{
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-header {
+    width: 100%;
+}
+
+.section-header.bottom-line::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 50px;/*線の長さ*/
+  border-bottom: solid 6px #f79314;
+  margin-top: 20px;
+  margin: 20px auto 0 auto;
+}
+
+/*「ポテパン」の部分を強調*/
+h2.section-main-title span {
+    font-size: 50px;
+    font-family: Lato, sans-serif;
+}
+
+
+/* 
+---hover-------------
+*/
+
+
+.hover-opacity {
+    transition: opacity 0.2s;
+}
+
+
+.hover-opacity:hover {
+    opacity: 0.7;
+}
+
+
+@media screen and (min-width: 767px) {
+
+  .hover-scale {
+    transition: transform .2s;
+  }
+
+  a:hover .hover-scale {
+    transform: scale(1.1);
+  }
+
+  .service-media:hover .hover-scale {
+    transform: scale(1.05);
+  }
+
+  .hover-text-color {
+    transition: .2s;
+  }
+
+  a:hover .hover-text-color, .hover-text-color:hover {
+    color: #F79314;
+  }
+
+}
+
+/*
+---ヘッダー--------------
+*/
+
+.site-header{
+    width: 100%;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site-header-inner{
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header-logo*/
+
+.header-logo img{
+    width: auto;
+    height: 20px;
+}
+
+nav.header-nav {
+    display: block;
+}
+
+.header-nav-list.contents-tidy {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.header-nav ul.header-nav-list li.header-nav-item-outline {
+    list-style: none;
+    display: inline-block;
+}
+
+.header-nav .header-nav-list > li + li{
+    margin-left: 30px;
+}
+
+.header-nav .header-nav-list > li + li:last-child {
+    margin-left: 20px;
+}
+
+/*フォントサイズを変えるためfirst-child,last-childを定義*/
+
+.header-nav span:first-child {
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+}
+
+.header-nav span:last-child {
+    font-size: 10px;
+    font-family: Noto Sans JP, sans-serif;
+}
+
+
+a.header-nav-item{
+    text-decoration: none;
+    color: #222222;
+}
+
+
+.header-nav-item-outline{
+    display: flex;
+    margin-left: 30px;
+}
+
+.header-nav-item span{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*無料カウンセリングのボタン*/
+
+.header-button-outline{
+    display: inline-block;
+}
+
+.header-button{
+    width: 150px;
+}
+
+
+.link-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f79314;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    color:#fff;
+    font-size: 12px;
+    height: 60px;
+    border: none;
+    font-family: Noto Sans JP, sans-serif;
+}
+
+
+
+.link-button.menu{
+    height: 40px;
+    font-size: 12px;
+}
+
+.hover-opacity {
+    transition: opacity 0.2s;
+}
+
+/* firstview*/
+.section-top-hero{
+    padding-top: 190px;
+    padding-bottom: 28px;
+    background-image: url(images/top-hero.png);
+    background-size: auto 100%;
+    background-position: right 0;
+    background-repeat: no-repeat;
+}
+
+.content-width {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.top-hero-box{
+    position: relative;
+    max-width: 337px;
+}
+
+.top-hero-heading img{
+    width: 337px;
+}
+
+.top-hero-text{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 1.7;
+}
+
+
+.no-subtitle{
+    font-size: 16px;
+}
+
+/*padding-topで高さ調整/max-widthで自動改行*/
+.proviso{
+    color: #888;
+    font-size: 10px;
+    max-width: 512px;
+    padding-top: 132px;
+}
+
+.proviso p{
+    background-color: rgba(255,255,255,0.3);
+    padding: 4px;
+}
+
+/*
+----potepancampとは-----------
+*/
+.main-section.top-about{
+    background-color: #f79314;
+    padding-top: 45px;
+}
+
+.main-section{
+    padding-top: 75px;
+    padding-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.contents-tidy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-about.contents-tidy{
+    align-items: center;
+}
+
+.banner-student{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.about-text{
+    color: #fff;
+    width: 53%;
+
+}
+
+.about-text h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Noto Sans JP, sans-serif;
+
+}
+
+.about-text span {
+    font-size: 50px;
+    font-family: Lato, sans-serif;
+}
+
+.about-text p{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-family: Noto Sans JP, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2.3;
+}
+
+.top-about-button{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.link-button.inversion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f79314;
+    background-color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    margin-right: 10px;    
+}
+
+.link-button span:first-child{
+    letter-spacing: 4px;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+.link-button span:last-child{
+    font-size: 14px;
+}
+
+.No1-notation{
+    position: absolute;
+    top: 0;
+    right: -170px;
+
+}
+
+.No1-notation img{
+    width: 154px;
+    height: 154px;
+}
+
+
+
+/*
+--------03.POTEPANCAMPの特徴--------
+*/
+
+
+.section-header.contents-tidy{
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc-list{
+    padding: 0;
+    margin-top: 110px;
+}
+
+.desc-list > li{
+    background-color: #FCFAF5;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+.desc-list > li + li{
+    margin-top: 90px;
+}
+
+.desc-list li{
+    list-style: none;
+}
+
+.list-no{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #F79314;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fcfaf5;
+    text-align: center;
+    line-height: 100px;
+    margin: -90px auto 0 auto;
+    font-weight: bold;
+}
+
+h3.list-title {
+    color: #222222;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+p.list-text {
+    color: #222222;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 1.5px;
+}
+
+p.list-text span{
+    color: #F79314;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.example-graph{
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 40px 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.example-graph li{
+    width: calc(33%);
+    padding: 0px 60px;
+    display: flex;
+}
+
+.example-graph li img{
+    width: 100%;
+}
+
+.example-company{
+    display:inline-block;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.example-company-title{
+    display: inline-block;
+}
+
+.example-company-title p{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.example-company-title img{
+    margin-left: 10px;
+    width: 34px;
+}
+
+.example-company-title::after{
+    content: '';
+    display: block;
+    border-bottom: solid 4px #f79314;
+    margin-top: 10px;
+}
+
+.company-contents.contents-tidy{
+    padding: 0;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.company-contents > li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.company-contents img{
+    width: 100%;
+}
+
+
+.engineer-group{
+    margin-top: 45px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.engineer-box{
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 15px;
+    width: calc(100% / 3);
+}
+
+.engineer-media{
+    display: flex;
+    flex-direction: column; /*この中は上から下へ並ぶ*/
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.engineer-company-logo{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.engineer-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.engineer-profile p {
+    color: #222222;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.engineer-name span{
+    display: block;
+    color: #F79314;
+    font-size: 14px;
+}
+
+.engineer-message{
+    position: relative;
+    /*width: 100%;*/
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.engineer-message p{
+    margin: 0;
+}
+
+.engineer-message::before{
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50px;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #f6f6f6;
+}
+
+
+
+/*
+--------04.POTEPANCAMPの選べるコース--------
+*/
+
+.main-section.top-potepan {
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: 1;
+    font-family: 'Lato', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.top-potepan .content-width {
+    background-image: url(images/bg-section-top-course.png);
+    background-size: 281px 275px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 50px) top;
+    padding-top: 35px;
+}
+
+.course-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.course-list > li + li{
+    margin-top: 40px;
+}
+
+.course-list a {
+    text-decoration: none;
+}
+
+.web-app-course{
+    background-color: #FFFFFF;
+}
+
+.web-app-course.contents-tidy {
+    padding: 30px;
+    max-height: 108px;
+}
+
+.web-app-course.standard .course-title {
+    border-image: linear-gradient(to right, #ff6d00 0%, #f79214 100%);
+    border-image-slice: 1;
+}
+
+.web-app-course.career .course-title {
+    border-image: linear-gradient(to right, #f79214 0%, #f74e06 100%);
+    border-image-slice: 1;
+}
+
+.course-title{
+    width: 30%;
+    border: 3px solid #f79214;
+    margin-left: -50px;
+    margin-right: 30px;
+}
+
+
+.course-title h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    color: #222222;
+}
+
+.course-title.contents-tidy {
+    justify-content: center;
+    align-items: center;
+}
+
+.course-contents {
+    position: relative;
+    width: calc(70% + 30px);
+    max-height: 108px;
+}
+
+.course-explain.orange{
+    color: #F79314;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+    position: absolute;
+}
+
+.course-explain.red{
+    color: #F75307;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+    position: absolute;
+}
+
+.course-contents div {
+    margin-top: 20px;
+    max-height: 72px;
+}
+
+.course-contents > div p {
+    font-weight: 400;
+    background-color: #222222;
+    color: #FFF;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.course-contents p{
+    margin: 0 auto 0 -15px;
+    line-height: 1.5;
+}
+
+.condition-list{
+    margin-top: 7px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.list-marker {
+    margin-left: 1.9em;
+    text-indent: -1.9em;
+    color: #222222;
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list-marker::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #f79214;
+    margin: 0 10px;
+}
+
+.course-about {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    font-size: 12px;
+    color: #999;
+    font-weight: bold;
+}
+
+.course-about span{
+    color: #f79214;
+    font-size: 18px;
+}
+
+.section-button {
+    margin-top: 60px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+--------05.サービスへの想い--------
+*/
+
+.top-section{
+    padding: 75px 0 80px;
+    background-color: #FCFAF5;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.top-message-contents{
+    margin-top: 60px;
+}
+
+.message-title{
+    color:#FF802C;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.top-message{
+    margin-top: -34px; /*なぜか14pxずれてしまう？*/
+    position: relative;
+}
+
+.top-message.contents-tidy{
+    align-items: center;
+}
+
+.top-message-text{
+    padding: 40px 150px 40px 40px;
+    margin: 0 -100px 0 0;
+    background-color: #FFFFFF;
+    color: #222222;
+    line-height: 2;
+}
+
+.top-message-1{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.top-message-2{
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.top-message-3{
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.top-name{
+    position: relative;
+}
+
+.top-name p {
+    position: absolute;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.top-name p span{
+    font-size: 24px;
+}
+
+/*
+--------06.受講生の声--------
+*/
+
+.section-content{
+    font-family: "Noto Sans JP", sans-serif;
+    margin-top: 60px;
+}
+
+.interview-list{
+    list-style: none;
+}
+
+.interview-list .contents-tidy{
+    margin: 0;
+}
+
+.interview-list > li {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% / 3);
+}
+
+a.interview-media{
+    position: relative;
+    text-decoration: none;
+}
+
+.interview-picture{
+    position: relative;
+    padding-top: 100%;
+}
+
+.picture{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.interview-thumbnail{
+    padding: 80px 20px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.interview-thumbnail p{
+    margin-top: 5px;
+    padding-top: 4px;
+    margin-bottom: 0;
+}
+
+
+.interview-thumbnail-course-name{
+    color: #F79314;
+    border-bottom: 2px solid white;
+}
+
+.interview-thumbnail-subtitle{
+    color: #FFFFFF;
+    text-align: left;
+}
+
+p.interview-thumbnail-subtitle span:first-child{
+    font-size: 20px;
+}
+
+.interview-thumbnail-subtitle span:last-child{
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.interview-media-text{
+    margin: 15px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.section-button{
+    margin-top: 60px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-button span:first-child{
+    letter-spacing: 4px;
+    line-height:1.5;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.link-button span:last-child{
+    font-size: 14px;
+}
+
+/*
+--------07.POTEPANが運用するサービス--------
+*/
+
+.service-list{
+    list-style: none;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: bold;
+}
+
+.service-media{
+    color: #222222;
+    text-decoration: none;
+}
+
+.service-list{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.service-list > li{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% / 3);
+}
+
+.service-media-thumbnail{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 190px;
+    padding: 0 20px;
+}
+
+.service-media-thumbnail img{
+    width: 100%;
+}
+
+.service-media-thumbnail.potepan-freelance{
+    border: 2px solid #FC6803;
+}
+
+.service-media-thumbnail.potepan-career{
+    border: 2px solid #08af77;
+}
+
+.service-media-thumbnail.potepan-style{
+    border: 2px solid #000;
+}
+
+.service-media-text{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/*
+--------フッター--------
+*/
+
+.site-footer{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #F79314;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+}
+
+.page-top-button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -105px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 12px 30px -15px;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.page-top-arrow {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-left: solid 3px #f79214;
+    border-top: solid 3px #f79214;
+    transform: rotate(45deg);
+    text-decoration: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+p.page-top-arrow{
+    margin: 18px;
+}
+
+
+.footer-list{
+    list-style: none;
+    font-weight: bold;
+}
+
+.footer-info{
+    color: #FFFFFF;
+    font-weight: bold;
+    display: block;
+}
+
+.footer-logo{
+    display: inline-block;
+    max-width: 280px;
+}
+
+.footer-logo img{
+    width: 100%;
+}
+
+p.footer-company-name {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+p.footer-company-address {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.social-media{
+    list-style: none;
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.social-media-items{
+    display: block;
+    max-width: 60px;
+}
+
+.social-media-items img{
+    width: 100%;
+}
+
+.social-media > li + li{
+    margin-left: 15px;
+}
+
+.footer-list{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list-items{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.footer-list > li + li{
+    margin-top: 30px;
+}
+
+.footer-list-items span {
+    margin-left: 16px;
+    font-weight: normal;
+}
+
+.site-footer-sub{
+    margin: 60px auto 0;
+    padding: 0 50px;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.site-footer-sub p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-potepan-character{
+    align-self: flex-end;
+}
+
+.footer-potepan-character img{
+    height: 70px;
+}
